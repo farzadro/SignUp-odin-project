@@ -1,0 +1,179 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(../fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image {
+  background-image: url(../img/leftside-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  widows: 55vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 35vh;
+  width: 55vw;
+  background-color: #E5E7EB;
+}
+
+h2 {
+  font-family: calibri, sans-serif;
+  margin-left: 40px;
+  margin-bottom: 70px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px lightblue;
+}
+
+.headline {
+  font-family: sans-serif;
+  margin-bottom: -30px;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.rs {
+  display: flex;
+  flex-direction: column;
+}
+
+.ls {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input {
+  margin-top: 5px;
+  font-family: calibri, sans-serif;
+}
+
+input {
+  width: 400px;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #c7c7c9;
+}
+
+input:focus {
+  box-shadow: 1px 3px #6a6adf;
+}
+
+input:valid {
+  box-shadow: 1px solid #49a049;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  background-color: #E5E7EB;
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 35px;
+  padding: 15px;
+  background-color: #84af84;
+  border: 1px solid #84af84;
+  color: aliceblue;
+  border-radius: 20px;
+  font-size: large;
+  width: 300px;
+}
+
+p {
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #49a049;
+}
+
+h1 {
+  font-family: Norse-bold, sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.250);
+  margin-top: 160px
+}
+
+img {
+  height: 15vh;
+}
+
+.ps {
+  position: absolute;
+  top: 95vh;
+  left: 10vw;
+  font-family: calibri, sans-serif;
+}
+
+.ps p {
+  color: white
+}
+.ps a {
+  color: white;
+  text-decoration:underline;
+}
+
+#error {
+  color: red;
+  margin-top: 1px;
+  margin-left: -2px;
+}
